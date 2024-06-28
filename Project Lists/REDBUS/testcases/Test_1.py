@@ -12,7 +12,7 @@ class Test_001:
         driver = launch_browser
         driver.get(ReadProperty.geturl1())
         title = driver.title
-        if "Book Bus Tickets Online, Easy & Secure Booking" in title:
+        if "Bus Ticket Booking Online" in title:
             self.log.info("Testcase_1::Correct Website")
             driver.save_screenshot(ss+"\\"+"Testcase_1 Correct Website.png")
             assert True
